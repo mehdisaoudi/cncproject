@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNC Club Membership Form - Commitment</title>
+</head>
+<center>
+<body>
+  <form  method="post" id="Commitment">
+    <h1>CNC Club Membership Form</h1>
+    <h2>Commitment</h2>
+
+    <label for="availability">Are you available to attend weekly/monthly meetings? (Yes/No):</label>
+    <br><br>
+    <label for="yes">yes</label>
+    <input type="radio" name="availability" id="yes">
+    <br><br>
+    <label for="no">No</label>
+    <input type="radio" name="availability" id="no">
+    <br><br>
+
+    <label for="timeCommitment">How much time are you willing to dedicate to club activities each week?(days)</label>
+    <input type="number" required max="6" min="1">
+    <br><br>
+    <button type="reset">Reset</button><br><br>
+    <button type="button" onclick="history.back()">back</button>
+    <button type="submit"><a href="thanks.html">Submit</a></button>
+  </form>
+</center>
+</body>
+</html>

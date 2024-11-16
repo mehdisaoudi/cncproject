@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNC Club Membership Form - Interests and Goals</title>
+</head>
+<center>
+<body>
+  <form method="post" id="interestsandgoals">
+    <h1>CNC Club Membership Form</h1>
+    <h2>Interests and Goals</h2>
+
+    <label for="interestReason">1. Why are you interested in joining the CNC Club?</label>
+    <textarea id="interestReason" name="interestReason"  cols="20" required></textarea>
+    <br><br>
+
+    <label for="specificAreas">2. What specific areas related to CNC are you most interested in exploring?</label>
+    <textarea id="specificAreas" name="specificAreas" cols="20" required></textarea>
+    <br><br>
+
+    <p>3. Would you be interested in any of the following activities? (Check all that apply)</p>
+
+    <input type="checkbox" id="activity1" name="activities" value="Hands-On CNC Machine Training">
+    <label for="activity1">Hands-On CNC Machine Training</label><br>
+
+    <input type="checkbox" id="activity2" name="activities" value="3D Modeling and Design Workshops">
+    <label for="activity2">3D Modeling and Design Workshops</label><br>
+
+    <input type="checkbox" id="activity3" name="activities" value="Guest Lectures from Industry Experts">
+    <label for="activity3">Guest Lectures from Industry Experts</label><br>
+
+    <input type="checkbox" id="activity4" name="activities" value="CNC Competitions">
+    <label for="activity4">CNC Competitions</label><br>
+
+    <input type="checkbox" id="activity5" name="activities" value="Field Trips to CNC Facilities">
+    <label for="activity5">Field Trips to CNC Facilities</label><br>
+
+    <input type="checkbox" id="activity6" name="activities" value="Collaborative Projects">
+    <label for="activity6">Collaborative Projects</label><br><br>
+
+    <label for="suggestions">4. Any suggestions for activities or events for the CNC Club?</label>
+    <textarea id="suggestions" name="suggestions" cols="20" ></textarea>
+    <br><br>
+<button type="reset">Reset</button>
+<br><br>
+<button type="button" onclick="history.back()">back</button>
+<button type="submit"><a href="clientpage4.html">Next</a></button>
+  </form>
+</center>
+ 
+</body>
+</html>

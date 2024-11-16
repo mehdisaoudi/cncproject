@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNC Club Membership Form - Academic Background</title>
+  <link rel="stylesheet" href="cnc.css" type="text/css" >
+  
+</head>
+<body>
+  <center> 
+    <div class="header">
+      <img src="cnc image/1000020342-removebg-preview.png" alt="Logo du Club" class="club-logo">
+  
+  <div class="main-content">
+  <form id="academicBackgroundForm" method="post">
+    <div class="letters-container">
+      <h1 class="form-title-c">C</h1> <h1 class="form-title-N">N</h1>  <h1 class="form-title-c">C</h1> <h1 class="form-title-club"> club</h1></div>
+  
+      <h1 class="Membership"> Membership Form</h1>
+  <br>
+  <br>
+    <h2>Academic Background :</h2>
+    <div class="pinfo2" >
+    <label for="fieldOfStudy">Field of Study (or Relevant Subjects):</label>
+    <br>
+    <br>
+    <label for="faculty">Faculté :</label>
+    <select id="faculty" onchange="updateDepartments()" required>
+        <option value="">Sélectionner une faculté</option>
+        <option value="sciences">Sciences</option>
+        <option value="technologies">Technologies</option>
+        <option value="medecine">Médecine et Vie</option>
+    </select>
+<br>
+<br>
+    <label for="department">Département :</label>
+    <select id="department" required>
+        <option value="">Sélectionner un département</option>
+    </select>
+
+    <script>
+        function updateDepartments() {
+            const departmentSelect = document.getElementById('department');
+            const faculty = document.getElementById('faculty').value;
+
+            // Effacer les options actuelles
+            departmentSelect.innerHTML = '<option value="">Sélectionner un département</option>';
+
+            // Départements par faculté
+            const departments = {
+                sciences: ['Mathématiques', 'Informatique', 'Physique'],
+                technologies: ['Ingénierie', 'Technologie de l\'information', 'Électronique'],
+                medecine: ['Biologie', 'Chimie médicale', 'Pharmacie']
+            };
+
+            // Ajouter les nouvelles options selon la faculté choisie
+            if (departments[faculty]) {
+                departments[faculty].forEach(department => {
+                    const option = document.createElement('option');
+                    option.value = department.toLowerCase();
+                    option.textContent = department;
+                    departmentSelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+    <br><br>
+
+    <label for="relevantCourses">Are you currently taking any relevant courses? (Yes/No):</label>
+    <br><br>
+    <label for="yes ">Yes</label>
+    <input type="radio" id="yes " value="yes" name="courses">
+    <br><br>
+    <label for="no">NO</label>
+    <input type="radio" name="courses" id="no"value="No">
+    
+    <br><br>
+ 
+    <label for="experience">Previous Experience with CNC or Related Topics (if any):</label>
+    <br>
+    <input type="text" id="experience" name="experience">
+    <br><br>
+    <button type="reset">Reset</button><br><br>
+    <button type="button" onclick="history.back()">back</button>
+    <button type="submit"><a href="clientpage3.html">Next</a></button>
+    </div>
+    </div>
+    </div>
+  </form>
+  </center>
+
+ 
+</body>
+</html>

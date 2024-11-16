@@ -1,0 +1,300 @@
+
+
+
+/* cote css speciale de premier page : */
+
+body {
+
+background-color: #CB9DF0;
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+
+/* Style pour le logo */
+.club-logo {
+    height: 170px; /* Ajustez la taille du logo selon vos besoins */
+    width: 400; /* Garde les proportions du logo */
+    left: 100%;
+     
+}
+ 
+
+ 
+.cncnamelogo{
+    background-image: url('cnc image/200.png');
+  left: 500px;
+margin-top: -75px;
+width: 160px;
+height: 50px;
+position: absolute;
+background-size: cover;
+    overflow: hidden;
+    margin-right: -10px;
+    
+
+}
+
+
+ .nameclub { 
+    font-size: 18px;
+    font-weight: 15px;
+    color: #555;
+    position: relative; /* ou absolute */
+    top: 5px; /* Ajuste la position verticale */
+    left: 245px; /* Ajuste la position horizontale */
+   
+  
+
+ }
+.form-title-club  {
+    font-size: 58px;
+  
+    color: #939185;
+    position: relative; /* ou absolute */
+    top: -40px; /* Ajuste la position verticale */
+    left: 510px; /* Ajuste la position horizontale */
+   
+}
+.Membership {
+    font-size: 40px;
+    font-weight: 40px;
+    color: #4a2a47;
+ 
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+   
+    position: relative; /* ou absolute */
+    top: 50px; /* Ajuste la position verticale */
+    left: -60px; /* Ajuste la position horizontale */
+   
+    
+   
+} 
+
+
+.personelinfo{
+    font-size: 30px;
+    font-weight: 30px;
+    color: #555;
+   margin-top: 60px;
+   left: 30px;
+   text-decoration: underline 3px ;
+ }
+
+
+/* Style pour le conteneur du formulaire */
+.pinfo {
+    width: 350px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 15px 20px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h1 {
+   
+    text-align: center;
+    color: #555;
+}
+
+/* Styles pour les champs de saisie */
+input[type="text"],input[type="number"] , input[type="tel"], input[type="email"] {
+
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0de90;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+.grade {
+    display: block;
+    margin: 25px auto;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0de90;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+/* Style pour le bouton "Next" */
+.boutonnext , .reset {
+    width: 50px;
+    padding: 15px;
+    background-color: #1679AB;
+    color: white;;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boutonnext:hover {
+    background-color: #074173;
+}
+
+.reset:hover {
+    background-color: #074173;
+}
+
+/* Stickers décoratifs (appliqués avec :before et :after) */
+.pinfo::before,
+.pinfo::after {
+    content: "";
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    position: absolute;
+    background-size: cover; /* Pour que l'image remplisse le conteneur */
+    opacity: 1;
+}
+
+.pinfo::before {
+    background-image: url('cnc image/scientist.png'); /* Chemin d'un sticker */
+    top:  650px; /* Position ajustable */
+    left: -40px; /* Position ajustable */
+    
+}
+
+.pinfo::after {
+    background-image: url('cnc image/atom.png'); /* Chemin d'un autre sticker */
+    bottom: -20px; /* Position ajustable */
+    right: -20px; /* Position ajustable */
+}
+
+
+
+
+/* Style de base pour tous les stickers */
+.sticker {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    opacity: 1;
+        overflow: hidden;
+    
+}
+
+
+.sticker1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    opacity: 1;
+        overflow: hidden;
+animation: spin 30s infinite linear;
+}
+
+
+
+/* Styles spécifiques pour chaque sticker */
+.sticker-1 {
+    background-image: url('cnc image/flask.png');
+    top: 90px;
+    left: -70px;
+    transform: rotate(-15deg);
+    
+}
+
+.sticker-2 {
+    background-image: url('cnc image/science.png');
+    top: 10px;
+    right: -70px;
+    transform: rotate(15deg);
+  
+}
+
+
+
+.sticker-3 {
+    background-image: url('cnc image/chemistry.png');
+    top: 700px;
+    right: -170px;
+    transform: rotate(15deg);
+}
+
+
+
+.sticker-4 {
+    background-image: url('cnc image/chemistry (1).png');
+    top: 500px;
+    left: -120px;
+    transform: rotate(15deg);
+    
+}
+
+
+
+.sticker-5 {
+    background-image: url('cnc image/formula.png');
+    top: 350px;
+    right: -150px;
+    transform: rotate(15deg);
+   
+}
+
+
+
+.sticker-6 {
+    background-image: url('cnc image/molecular.png');
+    top: 300px;
+    left: -170px;
+    transform: rotate(15deg);
+    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* cote  css speciale de deuxiem page :  */
+.pinfo2 {
+    height: 400px;
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 15px 20px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 40px;
+    color: #555;
+    
+}
+
